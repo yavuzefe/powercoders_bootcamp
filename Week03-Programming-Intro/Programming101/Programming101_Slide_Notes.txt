@@ -1,0 +1,60 @@
+What is Programming: Solving problems using codes.
+Problem-solving             : Creativity activity
+Learning programming syntax : Analytical activity
+
+SORTING APP
+
+Possible Questions:
+Is there a limit of inputs?
+Are there several input fields  or one?
+If there is only one, how is the correct input would be? Should they seperated by coma or space
+
+Before coding visualize the steps:
+Inputs  : Input digits in one field, they are seperated by comas
+Process : Sorting algorithm
+Outputs : Print digits in order
+Then Pseudo Code
+
+PROCESS TO WRITE A PROGRAM:
+Before starting programming discover Inputs, Processes and Outputs.
+CORE DEFINITION OF A PROGRAM: Inputs, process, outputs
+Nouns: are usually your inouts and outputs.
+Verbs: describe your process (prompt, calculate, display)
+
+TIP CALCUALTOR APP
+Inputs  : Noun (Bill amount, tip rate)
+Process : Verb (Calculate tip) 
+Outputs : Noun (Tip amount, total amount)
+
+TEST DRIVEN DEVELOPEMENT
+Simple test plan: List the programs inputs and expected result
+Inputs:
+Expected result:
+Actual result:  
+Think edge and corner cases. They can show constraints of program
+
+PSEUDOCODE
+Initialize  : Set an initial value
+Prompt      : For user input
+Display     : For output on the screen
+
+TIP CALCULATOR PSEUDOCODE
+
+TipCalculator
+    Initialize billAmount to 0
+    Initialize tip to 0
+    Initialize tipRate to 0
+    Initialize total to 0
+
+    Prompt for billAmount with "How much is bill?"
+    Prompt for tipRate with "How much is your tip rate?"
+
+    Convert billAmount to number
+    Convert billAmount to number
+
+    tip = billAmount * 15/100
+    total = billAmount + tip
+
+    Display = "Your tip: " + tip
+    Display = "Your total bill is" + total
+End

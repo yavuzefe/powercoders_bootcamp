@@ -1,0 +1,11 @@
+Task 6
+1- Firstly we write all the numbers from 1 to 100.
+2- While we ar writing the number one by one, we control the each number which are multiples of 5, 7 by trying to divide each number by 5 and 7.
+3- When we detect a number which can be divided by 5 or 7, we check;
+4- If the number is exactly divisible both by 5 and 7, we delete this number and write "PowerCoders" instead of this number and conutinue to the next number. 
+5- If the number is exactly divisible only by 5, we delete this number and write "Power" instead of this number and conutinue to the next number.
+6- If the number is exactly divisible only by 7, we delete this number and write "Coders" instead of this number and conutinue to the next number.
+7- If the number can not be divided 5 nor 7, we write only the number itself.
+8- After we check the last number 100 we'll stop our program.
+
+

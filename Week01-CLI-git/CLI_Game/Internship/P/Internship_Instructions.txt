@@ -1,0 +1,7 @@
+Now you are ready for the Internship. You have applied few companies here but only 2 of them accepted your application.
+1- Find which companies accepted your application and choose one of them (Be aware of that one of them is a huge company).
+2- Write your thank you message in the company file.
+3- Create 6 folders in the "Internship" folder named as "Month1, Month2...Month6" with a one command.
+4- You are now in business life as an intern. Delete your 13 Lesson folders.
+5- Commit your process.
+6- Go to Job folder, find and read the Instructions.

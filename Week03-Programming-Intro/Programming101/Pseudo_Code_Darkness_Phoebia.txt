@@ -1,0 +1,36 @@
+find fastest 
+find the fastest two people define them fastest group 
+slowest group must go together and once time
+slow gorup members shouldn't return so everytime there must be sb waiting torch
+for returns we must use fastest one
+
+Darkness_Phoebia
+        INITIALIZE dadSpeed = 1
+        INITIALIZE momSpeed = 2
+        INITIALIZE boySpeed = 4
+        INITIALIZE girlSpeed = 5
+        INITIALIZE totalTime = 0
+        INITIALIZE torchTime = 12
+        INITIALIZE = fastest
+        INITIALIZE fastestGroup = fastest two people
+        INITIALIZE slowGroup = slowest two people
+
+    Constraints
+        torchTime = 12
+        2 person together
+
+    Process
+        >fastestgroup  = 2
+        totalTime = totalTime + 2
+        <fastest    = 1
+        totalTime = totalTime + 1
+        >slowGroup = 5
+        totalTime = totalTime + 5
+        <fastestgroup    = 2
+        totalTime = totalTime + 2
+        >fastestGroup  = 2
+        totalTime = totalTime + 2
+        if totalTime <= torchTime
+            print totalTime
+        else "You exceeded tourch time"
+End 

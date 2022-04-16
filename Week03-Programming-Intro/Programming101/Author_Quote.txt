@@ -1,0 +1,15 @@
+Create a program that prompts for a quote and an author. Display the quotation and author as shown here:
+[Author] says, "[Quote]" (Replace [Author] and [Quote] with the actual values.
+
+Author_Quote
+    INITIALIZE name for Author name
+    INITIALIZE text for quote
+    PROMT for name "Write the Author"
+    PROMT for text "Write quote"
+        If name includes number
+            print "type a letter please"
+        else if name length >= 35 char
+            print "max letter exceeded"
+        else print name
+    print name + " says " + quote
+END

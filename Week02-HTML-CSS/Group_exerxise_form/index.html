@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group exercise - Form</title>
+    <style>
+      input {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    
+      <form action="" method="post">
+        <fieldset name="PersonalInfo">
+            <legend>Personal Information</legend>
+        <input type="text" placeholder="Name & Surname" required />
+        <input type="email" placeholder="E-mail" required />
+        <input type="tel" placeholder="Phone number" required />
+        <input type="date" placeholder="Birthday" required />
+        <input type="text" placeholder="Your message to us" required />
+        <input type="color" placeholder="Your favourite color" />
+        <input type="password" placeholder="Your pasword" required />
+        <label for="browserselect">Choose a browser:</label>
+        <select name="browserselect" id="browserselect">
+          <option value="Chrome">Chrome</option>
+          <option value="Edge">Edge</option>
+          <option value="Firefox">Firefox</option>
+          <option value="Opera">Opera</option>
+        </select>
+        <br />
+        <label for="browser2">Write your browser: </label>
+        <input id="browser2" list="browser" />
+        <datalist id="browser">
+          <option value="Chrome">Chrome</option>
+          <option value="Edge">Edge</option>
+          <option value="Firefox">Firefox</option>
+          <option value="Opera">Opera</option>
+        </datalist>
+        <input type="reset" />
+        <input type="submit" />
+    </fieldset>
+      </form>
+   
+  </body>
+</html>

@@ -1,0 +1,30 @@
+/* #div1{
+    flex: 1 1 100px;
+
+    border: 5px solid red;
+    box-sizing: border-box;
+    width: 30%;
+
+}
+#div2{
+    border: 5px solid purple;
+
+}
+.parent{
+    display:flex;
+}
+#p1{
+    font-size: 1.5rem;
+    font-heigh
+}
+#p2{
+    font-size: 1.5rem;
+} */
+body{
+background-color: white;
+background-image:
+linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%),
+linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%);
+background-size:100px 100px;
+background-position: 0 0, 50px 50px;
+}

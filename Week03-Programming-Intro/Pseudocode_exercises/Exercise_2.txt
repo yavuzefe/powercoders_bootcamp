@@ -1,0 +1,6 @@
+1- We check whether the inputs, which user wrote are really a number or not.
+2- If there is a character or something else except number, we give user immediately feedback and want from the user to write a number. We make this step until all the inputs will be a valid number.
+4- If all the inputs are valid numbers we write them in an order which user wrote.
+5- We took the first number and add the second number, than add this sum the next number in the array. 
+6- We continue this operation till the last element of the array. 
+7- After we add the last element to the sum, we print our sum.

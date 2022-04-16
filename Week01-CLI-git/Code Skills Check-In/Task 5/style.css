@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    /*ekran modelini izgara modeli yaptik*/
+    place-items: center;
+    /* bodynin icindekileri ortala */
+    height: 100vh;
+    /*body'nin icinde sade 200px height bir resim oldugu icin body de kendi yuksekligini icerigine gore ayarliyor.
+    bu komutla yuksekligini ekranin boyutuna gore ayarliyor*/
+    margin: 0;
+}
+
+/* Alternatiifi
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+} */
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /*rectangular img is made square by us so it is cramped now, with this property we protected our img*/
+}

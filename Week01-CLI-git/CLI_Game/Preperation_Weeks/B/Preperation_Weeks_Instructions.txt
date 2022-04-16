@@ -1,0 +1,6 @@
+Congratulations, you've been choosen as a PowerCoders participant for the Preperation Weeks. 
+
+1- Create 3 text files in "Preperation_weeks" folder with the names: "English_Lessons", "Typing_Practice" and "FrontendMasters"
+2- You are a participant so you don't need your application folder anymore. Delete your "My_Application" folder with all contents.
+3- Make the "PowerCodersApp" folder as a repository and commit your all files.
+4- Go to "Bootcamp" folder, find and follow the instructions.

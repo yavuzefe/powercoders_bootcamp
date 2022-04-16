@@ -1,0 +1,12 @@
+img{
+    border-radius: 50%;    /* we make picture circle */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;    /* we don't want to distrube our picture */
+    display: block;   /* inlene elemets ingnore margin, so we make our inline element to keep all */
+    margin: 0 auto;
+
+}
+input{
+    display: block;
+}

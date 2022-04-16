@@ -1,0 +1,10 @@
+Create a program that prompts for an input string and displays output that shows the input string and the number of characters the string contains.
+
+StrinCahrCounter
+INITIALIZE var string = ""
+PROMPT for string "Type sth"
+for char in string
+    length = length + 1
+else
+    print string + length
+END

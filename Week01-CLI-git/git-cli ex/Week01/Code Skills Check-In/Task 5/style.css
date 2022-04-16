@@ -1,0 +1,17 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    vertical-align: middle;
+    padding: auto;
+    border: 5px red solid;
+    position: relative;
+    height: 700px;
+}
+img{
+    margin: auto;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

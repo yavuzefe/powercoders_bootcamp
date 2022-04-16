@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+}
+
+#profil {
+    border-top: 0.5rem black solid;
+}
+
+legend {
+    font-weight: 800;
+}
+
+form {
+    position: relative;
+}
+
+#submitbutton {
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+    padding: 2% 8%;
+    position: absolute;
+    right: 10px;
+}
+input{
+    border: none;
+    border-bottom: 3px solid rgb(150, 150, 150);
+}

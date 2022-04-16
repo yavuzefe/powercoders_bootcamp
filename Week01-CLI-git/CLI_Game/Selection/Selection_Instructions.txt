@@ -1,0 +1,6 @@
+Instructions:
+1- Move "My_Application" file into "Selection" folder.
+2- Print "Applicants_List" file in this folder and see all the applicants name.
+3- Write your name in the list
+4- Go to "Preperation_Weeks" folder, there are 2 folders named 'A' and 'B'. Try to find the true folder so taht you can start your course.
+5- Find the true folder and follow the instructions in it.

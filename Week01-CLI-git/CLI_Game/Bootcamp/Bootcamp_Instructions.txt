@@ -1,0 +1,6 @@
+Congratulations, you are ready to start Bootcamp. 
+1- List all the folders here and choose your city.
+2- In your city folder create 13 folders named as "Week1, Week2, Week3 ....Week13" with a single command.
+3- In each week folder create a "Lesson" text file with a single command.
+4- Go to "Internship" folder, there are 2 folders named 'P' and 'N'. Try to find the true folder so taht you can start internship.
+5- Find and follow the instructions in the true folder.

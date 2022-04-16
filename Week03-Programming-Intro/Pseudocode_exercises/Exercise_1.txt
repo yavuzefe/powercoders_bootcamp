@@ -1,0 +1,8 @@
+1- We want from user to write her/his numbers, which will be sorted.
+2- We check whether the inputs, which user wrote are really a number or not.
+3- If there is a character or something else except number, we give user immidiately feedback and want from the user to write a number. We make this step until all yhe inputs will be a valid number.
+4- If all the inputs are valid numbers we write them in an order which user wrote.
+5- We start from the first number to check it with the second number. If our number is smaller than the next number we continue checking our number with the next number in the array. If our number is smaller than all of the numbers in the array, we go to the next number and do the same operation from step 5.
+6- If our number is bigger than the second number we change the order of these two numbers. When we change the orders we start to check this new number with doing the same operation in step 5.
+7- We contunie on this operation until the last number. When  we come to check last number there won't be a number to check. So we finish our operation.
+8- We write the ordered numbers.

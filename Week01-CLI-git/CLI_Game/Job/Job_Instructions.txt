@@ -1,0 +1,5 @@
+Congratulations, 
+1- Copy your company file from "Intern" folder to this folder.
+2- Deleting your 13 Lesson folders was a bad idea. You may need them. Uncommit only your last commit.
+3- Now commit your process.
+4- Find the Last_Message file in this folder and read it.

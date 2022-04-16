@@ -1,0 +1,11 @@
+Create a program that prompts for your name and prints a greeting using your name.
+
+HelloName
+    INITIALIZE name = ""
+    PROMT for name "What's your name"
+    If name includes number
+        print "type a letter please"
+    else if name length >= 35 char
+        print "max letter exceeded"
+    else print name
+END
