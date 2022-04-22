@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+          /* General style */
+          body {
+              font-family: sans-serif;
+              font-size: 1.6em;
+              margin: 20px;
+          }
+      ​
+          nav ul {
+              padding: 20px; /* to remove default list indentation (padding on the left) */
+          }
+      ​
+          nav li {
+              font-size: 1.2em;
+              list-style-type: none;
+              background-color: salmon;
+              margin-left: 0px;
+              margin-bottom: 20px;
+              transition: background-color 0.1s;
+          }
+      ​
+          nav li:hover {
+              background-color: rgb(255, 187, 180);
+          }
+      ​
+          nav li a {
+              display: block  ;
+              font-size: 1.2em;
+              padding: 20px;
+              margin-left: 0px;
+              margin-bottom: 10px;
+              text-decoration: none;
+              color: darkblue;
+          }
+      ​
+      ​
+          #nav-toggle {
+              display: none;
+          }
+      ​
+          #nav-toggle + label {
+              display: flex;
+              position: fixed;
+              top: 10px;
+              right: 10px;
+              z-index: 100;
+              width: 60px;
+              height: 60px;
+              flex-direction: column;
+              padding: 0px;
+              cursor: pointer;
+              color: transparent;
+              padding: 10px;
+              background-color: rgb(0, 0, 0, 0);
+              transition: background-color 0.1s;
+
+              /* pointer-events: none; */
+          }
+      ​
+          #nav-toggle + label span, #nav-toggle + label::before, #nav-toggle + label::after {
+              display: inline-block;
+              background-color: rgb(92, 78, 117);
+              width: 60px;
+              height: 10px;
+              margin-bottom: 5px;
+              margin-top: 5px;
+              content: ""; /* have to give content, otherwise pseudo-element doesnt exist.... */
+              pointer-events: none;
+              user-select: none;
+              transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+          }
+      ​
+          /* hover state */
+          #nav-toggle + label:hover {
+              background-color: rgba(235, 186, 123, 0.363);
+          }
+      ​
+          /* checked state */
+          #nav-toggle:checked + label span {
+              opacity: 0;
+          }
+          #nav-toggle:checked + label::before {
+              transform: translateY(20px) rotate(45deg);
+          }
+      ​
+          #nav-toggle:checked + label::after {
+              transform: translateY(-20px) rotate(-45deg);
+          }
+      ​
+          /* nav */
+          #nav-toggle ~ nav {
+              position: fixed;
+              top: 0px;
+              left: 0px;
+              /* padding-top: 100px; */
+              background-color: rgb(205, 234, 241);
+              width: 100vw;
+              height: 100vh;
+              overflow-y: scroll;
+              transform: translateX(100vw);
+              transition: transform 0.2s;
+          }
+      ​
+          #nav-toggle:checked ~ nav {
+              transform: translateX(0px);
+          }
+      ​
+          nav h1 {
+              margin-left: 20px;
+          }
+      ​
+          /* #nav-toggle:checked + nav {
+              display: block;
+          } */
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+    <label for="nav-toggle" onclick="">
+      <span>toggle navigation visibility</span>
+    </label>
+    ​
+    <nav>
+      <h1>Menu</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h1>Home</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        veniam beatae sapiente accusantium. Veniam deleniti repudiandae nostrum
+        nulla consectetur aut quia quod beatae, illo a magnam provident odio,
+        vel voluptatem!
+      </p>
+      ​
+    </section>
+  </body>
+</html>
