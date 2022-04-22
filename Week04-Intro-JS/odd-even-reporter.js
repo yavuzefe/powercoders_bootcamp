@@ -1,5 +1,4 @@
 input = window.prompt("Write a number between 0-20");
-// input = "18";
 let numb = Number(input)
 if (numb%2 === 0) {
     console.log(`${numb} is a even number`);
