@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        max-width: 500px;
+    }
+    #comments{
+        border: solid 1px grey;
+    }
+</style>
+<body>
+    
+    <section id="comments">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae velit, soluta neque reiciendis aspernatur ipsam dolorem quis, laboriosam animi architecto est! At excepturi amet consequuntur aliquid velit perferendis neque? Porro error placeat pariatur minus quisquam ipsam expedita voluptate praesentium quaerat. Sed possimus nobis ipsum mollitia eaque animi eveniet consequatur repellat facere? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae velit, soluta neque reiciendis aspernatur ipsam dolorem quis, laboriosam animi architecto est! At excepturi amet consequuntur aliquid velit perferendis neque? Porro error placeat pariatur minus quisquam ipsam expedita voluptate praesentium quaerat. Sed possimus nobis ipsum mollitia eaque animi eveniet consequatur repellat facere? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae velit, soluta neque reiciendis aspernatur ipsam dolorem quis, laboriosam animi architecto est! At excepturi amet consequuntur aliquid velit perferendis neque? Porro error placeat pariatur minus quisquam ipsam expedita voluptate praesentium quaerat. Sed possimus nobis ipsum mollitia eaque animi eveniet consequatur repellat facere? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae velit, soluta neque reiciendis aspernatur ipsam dolorem quis, laboriosam animi architecto est! At excepturi amet consequuntur aliquid velit perferendis neque? Porro error placeat pariatur minus quisquam ipsam expedita voluptate praesentium quaerat. Sed possimus nobis ipsum mollitia eaque animi eveniet consequatur repellat facere? </p>
+    </section>
+    <script>
+
+        let commentElements = document.querySelectorAll("#comments p");
+        console.log(commentElements);
+        let comments = []
+        for (let i=0; i<commentElements.length; i++) {
+            let comment = commentElements[i];
+            if (comment.innerText.length > 100){
+                let text = comment.innerText;
+                comments[i] = text
+                let shortText = text.substring(0, 150);
+                comment.innerHTML = shortText + "...<button onclick = \"onReadMore(" + i + ")\">read more</button>"
+            }
+        }
+        function onReadMore(index){
+            let commentElement = commentElements[index];
+            commentElement.innerText = comments[index];
+        }
+    </script>
+</body>
+</html>
