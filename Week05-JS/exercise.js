@@ -46,3 +46,20 @@
 // 2
 // 8
 // 5
+
+const possibleStatus = {
+    OPEN: Symbol('Open'),
+    IN_PROGRESS: Symbol('In progress'),
+    COMPLETED: Symbol('Completed'),
+    HOLD: Symbol('On hold'),
+    CANCELED: Symbol('Canceled')
+    };
+    // complete a task
+    task.setStatus(possibleStatus.COMPLETED);
+    
+let status = Symbol('status');
+const task = {
+[status]: possibleStatus.OPEN,
+description: 'Learn ES6 Symbol'
+};
+console.log(task);
