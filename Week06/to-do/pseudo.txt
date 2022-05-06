@@ -1,0 +1,22 @@
+MUST HAVE REQUIREMENTS
+title 
+list of to-dos
+add new to-do: button&Inputs
+change order / set priority of to-dos
+change status of to-dos (open/done/in progress)
+
+inputs - todo (list of object)
+outputs  - array of todos rendered as list items
+steps - 
+-add todo
+    --enter input
+    --submit input
+    --get input
+    --validate input (is it empty, does it exist as open todo (repetition)? return error message & enter input again: move on next step, )
+    --create object w/input string, number (default add to bottom of list), boolean (default:false)
+    --add to the list (push it todo array )
+    confirmation to user
+-display todo list
+-mark as done
+-order/set priority
+-for buttons -> eventlisteners
