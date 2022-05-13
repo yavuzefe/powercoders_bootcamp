@@ -1,7 +1,7 @@
 // - Add todo
 // 1. Variables
 // -not in yet: user input how to order
-const todo = document.querySelector("input[type = 'text']");
+const todo = document.querySelector("input[type='text']");
 const addBtn = document.querySelector("button");
 const ol = document.querySelector("ol");
 
@@ -9,16 +9,20 @@ let todos = [];
 
 // check for duplicate
 let isInputUnique = (newItem) => {
-    let temp;
-    for (let index = 0; index < todos.length; index++) {
+    
+    if(todos.length != 0) {
+        for (let index = 0; index < todos.length; index++) {
         
-        if(todos[index].text == newItem){
-            temp = true;
-        } else{
-            temp = true;
-        }
-        
-    } return temp;
+            if(todos[index].text === newItem){
+                return false;
+            } else{
+                return true;
+            }
+        } 
+    } else {
+        return true;
+    }
+
     // return true;
     // todos.forEach(element => {
     //     if(newItem !== element.text.value){
@@ -35,17 +39,18 @@ let addTodo = () => {
     let newItem = todo.value;
 
     // validate the value, check for duplicates
-    if (isInputUnique(newItem)) {
+    if (isInputUnique(newItem) && newItem != '') {
         //create instance
         //push todos list and display list
         todos.push(new ToDo(todos.length, newItem));
         displayList(todos);
         console.log(todos);
-    } else {
+    } 
+    // else {
         //return error message
-        alert("!!!");
+        // alert("!!!");
         // displayList(todos);
-    }
+    // }
 }
 // let clearList = () => {
 //     list.innerHTML = "";
@@ -79,27 +84,25 @@ let displayList = list => {
 //     displayList(todos);
 // }
 
-// let changeStatus = (itemIndex) => {
-//     if(todos[itemIndex].checked){
-//         todos[itemIndex].isDone === true;
-//         console.log(todos[itemIndex]);
-//         // todos.splice(itemIndex, 1);
+let changeStatus = (itemIndex) => {
+    if(todos[itemIndex].checked){
+        todos[itemIndex].isDone === true;
+        console.log(todos[itemIndex]);
+        todos.splice(itemIndex, 1);
     
-//         // removeItem(itemIndex);
-//     }else{
-//         todos[itemIndex].isDone == false;
-//     }
-//     displayList(todos);
+        removeItem(itemIndex);
+    }else{
+        todos[itemIndex].isDone == false;
+    }
+    displayList(todos);
 
 //     // check input if checkbox  is checked -
 //     // find the corresponding obj, and set isDone = true 
 //     // if it is not checked, set isDone = false
-// }
+}
 
 
 addBtn.addEventListener("click", addTodo);
-
-
 
 function ToDo(id, text, order, isDone = false) {
     this.id = id;

@@ -12,22 +12,25 @@
     <script>
         const getWidthAndHeightFromDataUrl = dataURL => new Promise(resolve => {
             const img = new Image();
+            img.src = dataURL;
+
             img.onload = () => {
                 resolve({
                     width: img.width,
                     height: img.height,
                 });
             }
-            img.src = dataURL;
         });
-        document.getElementById('submit').onclick = async () => {
-            const file = document.querySelector('[type=“file”]').files[0];
+        document.getElementById('submit').onclick = /*async*/ () => {
+            const file = document.querySelector('[type="file"]').files[0];
             if(!file){
                 throw Error('You must specify a file, u donut');
             }
             const fileAsDataURL = window.URL.createObjectURL(file);
-            const dimensions = await getWidthAndHeightFromDataUrl(fileAsDataURL);
-            console.log(dimensions);
+            /*const dimensions = await getWidthAndHeightFromDataUrl(fileAsDataURL);
+            console.log(dimensions);*/
+            getWidthAndHeightFromDataUrl(fileAsDataURL).then(dimensions => console.log(dimensions));
+            
         }
     </script>
 </body>
